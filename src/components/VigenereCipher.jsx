@@ -68,7 +68,11 @@ const VigenereCipher = () => {
       <div className="footer">
         <p>
           Made by:{" "}
-          <a href="https://alnickdev.netlify.app/" target="_blank">
+          <a
+            href="https://alnickdev.netlify.app/"
+            target="_blank"
+            rel="noreferrer"
+          >
             Alnick.
           </a>
         </p>
