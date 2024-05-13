@@ -1,0 +1,92 @@
+/* mobile first approach */
+.app-title {
+  text-align: center;
+  font-size: 26px;
+}
+
+.input-fields {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 40px 0;
+}
+
+.input-fields input {
+  text-align: center;
+  font-size: 15px;
+  padding: 5px;
+}
+
+.input-fields label {
+  font-size: 16px;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+.input-fields select {
+  padding: 5px;
+  font-size: 15px;
+}
+
+.table-container {
+  margin-bottom: 15px;
+}
+
+.table-title {
+  text-align: center;
+  font-size: 20px;
+}
+
+.vigenere-table {
+  display: flex;
+  justify-content: center;
+  overflow-x: auto;
+}
+
+.output-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.output-innter-container {
+  overflow: auto;
+}
+
+.output-title {
+  font-size: 15px;
+  font-weight: bold;
+}
+
+.output {
+  font-size: 20px;
+  margin: 0;
+}
+
+.generate-button {
+  appearance: none;
+  background-color: #fafbfc;
+  border: 2px solid #24292e;
+  border-radius: 6px;
+  cursor: pointer;
+  display: inline-block;
+  font-size: 14px;
+  font-weight: 600;
+  padding: 6px 16px;
+  vertical-align: middle;
+  margin: 7px 0;
+}
+
+.footer {
+  bottom: 0;
+}
+
+.footer p,
+a {
+  font-size: 13px;
+  color: #02021b;
+  font-weight: 700;
+}
