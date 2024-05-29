@@ -1,6 +1,8 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import VigenereTable from "./VigenereTable";
 import GenerateVigenere from "./GenerateVigenere";
+import Moon from "../assets/moon.svg";
+import Sun from "../assets/sun.svg";
 
 const VigenereCipher = () => {
   const [vigenereTableName, setVigenereTableName] = useState("");
@@ -13,9 +15,53 @@ const VigenereCipher = () => {
     setTable(generatedTable);
   };
 
+  const getInitialTheme = () => {
+    const savedTheme = localStorage.getItem("theme");
+    if (savedTheme) {
+      return savedTheme === "light-mode";
+    }
+    const userPrefersLight =
+      window.matchMedia &&
+      window.matchMedia("(prefers-color-scheme: light)").matches;
+    return userPrefersLight;
+  };
+
+  const [lightMode, setLightMode] = useState(getInitialTheme);
+
+  useEffect(() => {
+    const theme = lightMode ? "light-mode" : "dark-mode";
+    document.body.className = theme;
+    localStorage.setItem("theme", theme);
+  }, [lightMode]);
+
+  const handleThemeChange = () => {
+    setLightMode((prevMode) => !prevMode);
+  };
+
   return (
     <>
+      <div className="navbar">
+        {lightMode ? (
+          <img
+            src={Sun}
+            alt="Sun Icon"
+            height="40"
+            width="40"
+            onClick={handleThemeChange}
+          />
+        ) : (
+          <img
+            src={Moon}
+            alt="Sun Icon"
+            height="40"
+            width="40"
+            onClick={handleThemeChange}
+          />
+        )}
+      </div>
+
       <h1 className="app-title">Keyed Vigenère Cipher</h1>
+
       <div className="input-fields">
         <input
           type="text"
