@@ -146,3 +146,10 @@ a {
   color: #02021b;
   font-weight: 700;
 }
+
+@media (min-width: 612px) and (max-width: 1440px) {
+  .vigenere-table {
+    display: flex;
+    justify-content: center;
+  }
+}
