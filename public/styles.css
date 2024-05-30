@@ -53,10 +53,22 @@ body.dark-mode {
   }
 }
 
+.theme-icon {
+  cursor: pointer;
+}
+
+.navbar-container {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
 .navbar {
   display: flex;
   justify-content: end;
   align-items: center;
+  max-width: 768px;
+  width: 100%;
 }
 
 .app-title {
@@ -136,8 +148,15 @@ body.dark-mode {
   margin: 7px 0;
 }
 
+.footer-container {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
 .footer {
-  bottom: 0;
+  max-width: 768px;
+  width: 100%;
 }
 
 .footer p,
@@ -147,7 +166,7 @@ a {
   font-weight: 700;
 }
 
-@media (min-width: 612px) and (max-width: 1440px) {
+@media (min-width: 612px) {
   .vigenere-table {
     display: flex;
     justify-content: center;

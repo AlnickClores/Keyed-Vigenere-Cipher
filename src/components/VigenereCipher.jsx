@@ -40,24 +40,28 @@ const VigenereCipher = () => {
 
   return (
     <>
-      <div className="navbar">
-        {lightMode ? (
-          <img
-            src={Sun}
-            alt="Sun Icon"
-            height="40"
-            width="40"
-            onClick={handleThemeChange}
-          />
-        ) : (
-          <img
-            src={Moon}
-            alt="Sun Icon"
-            height="40"
-            width="40"
-            onClick={handleThemeChange}
-          />
-        )}
+      <div className="navbar-container">
+        <div className="navbar">
+          {lightMode ? (
+            <img
+              src={Sun}
+              alt="Sun Icon"
+              height="40"
+              width="40"
+              onClick={handleThemeChange}
+              className="theme-icon"
+            />
+          ) : (
+            <img
+              src={Moon}
+              alt="Sun Icon"
+              height="40"
+              width="40"
+              onClick={handleThemeChange}
+              className="theme-icon"
+            />
+          )}
+        </div>
       </div>
 
       <h1 className="app-title">Keyed Vigenère Cipher</h1>
@@ -111,17 +115,19 @@ const VigenereCipher = () => {
         mode={mode}
         table={table}
       />
-      <div className="footer">
-        <p>
-          Made by:{" "}
-          <a
-            href="https://alnickdev.netlify.app/"
-            target="_blank"
-            rel="noreferrer"
-          >
-            Alnick.
-          </a>
-        </p>
+      <div className="footer-container">
+        <div className="footer">
+          <p>
+            Made by:{" "}
+            <a
+              href="https://alnickdev.netlify.app/"
+              target="_blank"
+              rel="noreferrer"
+            >
+              Alnick.
+            </a>
+          </p>
+        </div>
       </div>
     </>
   );
