@@ -1,10 +1,10 @@
 
-<h1><a href="https://vigenereverse.netlify.app/" target="_blank">Keyed Vigenere Cipher</a></h1
+<h1><a href="https://vigenereverse.netlify.app/" target="_blank">Keyed Vigenère Cipher</a></h1
 
 Let's first discuss what Vigenere Cipher is:
-Vigenere Cipher is a type of encryption using a simple form of polyalphabetic substitution. It employs a keyword to shift letters of the plaintext.
+Vigenère Cipher is a type of encryption using a simple form of polyalphabetic substitution. It employs a keyword to shift letters of the plaintext.
 
-Now, the Keyed Vigenere Cipher is similar to the standard Vigenère cipher but includes a keyword to generate a unique alphabet for each letter in the plaintext. This key influences the shifting patterns in a more intricate way than the traditional Vigenère cipher.
+Now, the Keyed Vigenère Cipher is similar to the standard Vigenère cipher but includes a keyword to generate a unique alphabet for each letter in the plaintext. This key influences the shifting patterns in a more intricate way than the traditional Vigenère cipher.
 
 
 ## How it works?
@@ -35,7 +35,7 @@ Keyed Alphabet: k r y p t o s a b c d e f g h i j l m n q u v w x z
 * since we have table name we will use the Keyed Alphabet *
 ```
 
-## How does the Vigenere Table is generated?
+## How does the Vigenère Table is generated?
 ```
 The table is constructed by writing out the alphabet in the first row. For each subsequent row,
 shift the starting point of the alphabet by one letter to the left, wrapping around to the beginning
@@ -45,7 +45,7 @@ with 'R', third row with 'Y', and so on.
 ```
 
 
-## Generated Vigenere Table
+## Generated Vigenère Table
 
 ![sample-vigenere-table](./src/assets/vigenere-table-sample.png)
 
@@ -78,6 +78,6 @@ plaintext "secret message" </br>
 using the keyword "hidden" </br>
 would be <b>"qknevwskjjmsz"</b>.
 
-<p>Encrypt or Decrypt your Vigenere Cipher here:</p> 
-<a href="https://vigenereverse.netlify.app/" target="_blank">Keyed Vigenere Cipher</a>
+<p>Encrypt or Decrypt your Vigenère Cipher here:</p> 
+<a href="https://vigenereverse.netlify.app/" target="_blank">Keyed Vigenère Cipher</a>
 
