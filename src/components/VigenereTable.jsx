@@ -5,7 +5,7 @@ const VigenereTable = ({ vigenereTableName, receiveTable }) => {
 
   useEffect(() => {
     generateVigenereTable();
-  }, [vigenereTableName]);
+  });
 
   const generateVigenereTable = () => {
     const alphabet = "abcdefghijklmnopqrstuvwxyz";
